@@ -1,0 +1,16 @@
+sys
+#
+local-user chec
+password cipher Admin@03
+authorization-attribute level 3
+service-type ssh
+quit
+#
+local-user admin
+password cipher admin@02
+authorization-attribute level 2
+service-type ssh
+quit
+#
+save
+#

@@ -1,0 +1,157 @@
+#
+dhcp server ip-pool f4-fuzongjingli
+ network 172.22.41.0 mask 255.255.255.0
+ gateway-list 172.22.41.254
+ dns-list 172.16.2.1
+ expired day 0 hour 12
+#
+dhcp server ip-pool f4-zhongceng
+ network 172.22.42.0 mask 255.255.255.0
+ gateway-list 172.22.42.254
+ dns-list 172.16.2.1
+ expired day 0 hour 12
+#
+dhcp server ip-pool f5-fuzongjijian
+ network 172.22.51.0 mask 255.255.255.0
+ gateway-list 172.22.51.254
+ dns-list 172.16.2.1
+ expired day 0 hour 12
+#
+dhcp server ip-pool f5-zhongceng
+ network 172.22.52.0 mask 255.255.255.0
+ gateway-list 172.22.52.254
+ dns-list 172.16.2.1
+ expired day 0 hour 12
+#
+dhcp server ip-pool f6-fuzongjingli
+ network 172.22.61.0 mask 255.255.255.0
+ gateway-list 172.22.61.254
+ dns-list 172.16.2.1
+ expired day 0 hour 12
+#
+dhcp server ip-pool f6-zhongceng
+ network 172.22.62.0 mask 255.255.255.0
+ gateway-list 172.22.62.254
+ dns-list 172.16.2.1
+ expired day 0 hour 12
+#
+dhcp server ip-pool f7-xunshiyuanzonggong
+ network 172.22.71.0 mask 255.255.255.0
+ gateway-list 172.22.71.254
+ dns-list 172.16.2.1
+ expired day 0 hour 12
+#
+dhcp server ip-pool f7-zhongceng
+ network 172.22.72.0 mask 255.255.255.0
+ gateway-list 172.22.72.254
+ dns-list 172.16.2.1
+ expired day 0 hour 12
+#
+dhcp server ip-pool f8-fuzongshifuzongjingli
+ network 172.22.81.0 mask 255.255.255.0
+ gateway-list 172.22.81.254
+ dns-list 172.16.2.1
+ expired day 0 hour 12
+#
+dhcp server ip-pool f8-zhongceng
+ network 172.22.82.0 mask 255.255.255.0
+ gateway-list 172.22.82.254
+ dns-list 172.16.2.1
+ expired day 0 hour 12
+#
+dhcp server ip-pool f9-fuzongshifuzongjingli
+ network 172.22.91.0 mask 255.255.255.0
+ gateway-list 172.22.91.254
+ dns-list 172.16.2.1
+ expired day 0 hour 12
+#
+dhcp server ip-pool f9-zhongceng
+ network 172.22.92.0 mask 255.255.255.0
+ gateway-list 172.22.92.254
+ dns-list 172.16.2.1
+ expired day 0 hour 12
+
+
+
+
+
+
+
+#
+interface Vlan-interface1041
+ description F4-fuzong
+ ip address 172.22.41.254 255.255.255.0
+#
+interface Vlan-interface1042
+ description F4-zhongcenglingdao
+ ip address 172.22.42.254 255.255.255.0
+#
+interface Vlan-interface1051
+ description F5-fuzongjinglijijian
+ ip address 172.22.51.254 255.255.255.0
+#
+interface Vlan-interface1052
+ description F5-zhongceng
+ ip address 172.22.52.254 255.255.255.0
+#
+interface Vlan-interface1061
+ description F6-fuzongjingli
+ ip address 172.22.61.254 255.255.255.0
+#
+interface Vlan-interface1062
+ description F6-zhongceng
+ ip address 172.22.62.254 255.255.255.0
+#
+interface Vlan-interface1071
+ description F7-xunjianyuanzonggong
+ ip address 172.22.71.254 255.255.255.0
+#
+interface Vlan-interface1072
+ description F7-zhengceng
+ ip address 172.22.72.254 255.255.255.0
+#
+interface Vlan-interface1081
+ description F8-fuzongshifuzongjingli
+ ip address 172.22.81.254 255.255.255.0
+#
+interface Vlan-interface1082
+ description F8-zhongceng
+ ip address 172.22.82.254 255.255.255.0
+#
+interface Vlan-interface1091
+ description F9-fuzongshifuzongjingli
+ ip address 172.22.91.254 255.255.255.0
+#
+interface Vlan-interface1092
+ description F9-zhongceng
+ ip address 172.22.92.254 255.255.255.0
+
+
+
+
+
+
+#
+dhcp server forbidden-ip 172.22.41.240 172.22.41.254
+#
+dhcp server forbidden-ip 172.22.42.240 172.22.42.254
+#
+dhcp server forbidden-ip 172.22.51.240 172.22.51.254
+#
+dhcp server forbidden-ip 172.22.52.240 172.22.52.254
+#
+dhcp server forbidden-ip 172.22.61.240 172.22.61.254
+#
+dhcp server forbidden-ip 172.22.62.240 172.22.62.254
+#
+dhcp server forbidden-ip 172.22.71.240 172.22.71.254
+#
+dhcp server forbidden-ip 172.22.72.240 172.22.72.254
+#
+dhcp server forbidden-ip 172.22.81.240 172.22.81.254
+#
+dhcp server forbidden-ip 172.22.82.240 172.22.82.254
+#
+dhcp server forbidden-ip 172.22.91.240 172.22.91.254
+#
+dhcp server forbidden-ip 172.22.92.240 172.22.92.254
